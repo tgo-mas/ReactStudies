@@ -1,0 +1,21 @@
+.postagem {
+    border: 1px solid #999;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.postagem img{
+    width: 200px;
+    margin: auto;
+    margin: 10px;
+}
+
+.postagem p{
+    text-align: justify;
+}
+
+footer{
+    display: flex;
+    padding: 10px;
+}
