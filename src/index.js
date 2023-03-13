@@ -1,7 +1,7 @@
 import { Titulo } from "./components/Título.jsx"
-import { Mensagem } from "./components/Mensagem.jsx"
 import { createRoot } from "react-dom/client"
 import {Blog} from "./components/Blog"
+import {Footer} from "./components/Footer"
 import "./style.css"
 
 const rootElement = document.getElementById('root');
@@ -12,6 +12,7 @@ root.render(
     <section>
         <Titulo></Titulo>
         <Blog></Blog>
+        <Footer></Footer>
     </section>
 )
 

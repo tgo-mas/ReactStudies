@@ -16,6 +16,9 @@ export function Footer(){
                         <td>CEP:</td>
                         <td>59300-000</td>
                     </tr>
+                    <tr>
+                        <td colSpan="2">&copy; 2023, SoulCode Academy. Todos os direitos reservados.</td>
+                    </tr>
                 </table>
             </div>
             <div>
