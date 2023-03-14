@@ -1,5 +1,5 @@
-import {Postagem} from "./Postagem"
-import "../style-blog.css"
+import {Postagem} from "../Postagem/Postagem"
+import "./style-blog.css"
 
 export function Blog(){
     return(

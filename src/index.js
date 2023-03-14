@@ -1,6 +1,6 @@
 import { Titulo } from "./components/Título.jsx"
 import { createRoot } from "react-dom/client"
-import {Blog} from "./components/Blog"
+import {Blog} from "./components/Blog/Blog"
 import {Footer} from "./components/Footer"
 import "./style.css"
 
@@ -15,7 +15,6 @@ root.render(
         <Footer></Footer>
     </section>
 )
-
 
 // let desc = 'React!'
 
