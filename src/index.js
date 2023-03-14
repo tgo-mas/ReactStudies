@@ -4,7 +4,9 @@ import { createRoot } from "react-dom/client"
 // import { Footer } from "./components/Footer/Footer"
 // import { Mensagem } from "./components/Mensagem/Mensagem"
 // import { Postagem } from "./components/Postagem/Postagem"
-import { Musics } from "./components/Musics/Musics"
+// import { Musics } from "./components/Musics/Musics"
+import {ListMusic} from "./components/ListMusic/ListMusic"
+import {Task} from "./components/Task/Task"
 import "./style.css"
 
 const rootElement = document.getElementById('root');
@@ -21,7 +23,11 @@ root.render(
         <Blog></Blog>
         <hr />
         <Footer></Footer> */}
-        <Musics/>
+        <ListMusic/>
+        <Task titulo="Beber água" status="Pendente" prazo="31/03/2023"/>
+        <Task titulo="Fazer atividade" status="Pendente" prazo="16/03/2023"/>
+        <Task titulo="Assistir aula" status="Concluída" prazo="18/03/2023"/>
+        
     </div>
 )
 
@@ -31,4 +37,4 @@ root.render(
 //     <h1>React é top!</h1>
 //     <img src="https://picsum.photos/200" alt="descricao"/>
 //     <p>Vamos aprender <br/> <b>{desc}</b></p>
-// </section>)
+// </section>)/

@@ -1,0 +1,20 @@
+.tarefa {
+    width: 200px;
+    margin: 20px;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+.tarefa .detalhes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarefa .status {
+    color: blue;
+}
+
+.tarefa .prazo {
+    color: red;
+}
