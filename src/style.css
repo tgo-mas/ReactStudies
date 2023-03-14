@@ -9,16 +9,3 @@ body{
     box-sizing: border-box;
     padding: 5px;
 }
-
-img{
-    width: 400px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px #000;
-}
-
-#root{
-    background-color: #fff;
-    width: 500px;
-    margin: auto;
-    box-shadow: 2px 2px 5px #000;
-}

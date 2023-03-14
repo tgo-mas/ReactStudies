@@ -1,0 +1,20 @@
+
+.music{
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    background: linear-gradient(#3e4243, #18191a);
+    display: inline-block;
+}
+
+.music img{
+    width: 100%;
+}
+
+.music h3,
+.music span{
+    display: block;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+}

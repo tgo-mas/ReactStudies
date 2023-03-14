@@ -1,9 +1,9 @@
-import { Titulo } from "./components/Título/Título.jsx"
 import { createRoot } from "react-dom/client"
-import { Blog } from "./components/Blog/Blog"
-import { Footer } from "./components/Footer/Footer"
-import { Mensagem } from "./components/Mensagem/Mensagem"
-import { Postagem } from "./components/Postagem/Postagem"
+// import { Titulo } from "./components/Título/Título.jsx"
+// import { Blog } from "./components/Blog/Blog"
+// import { Footer } from "./components/Footer/Footer"
+// import { Mensagem } from "./components/Mensagem/Mensagem"
+// import { Postagem } from "./components/Postagem/Postagem"
 import { Musics } from "./components/Musics/Musics"
 import "./style.css"
 
@@ -21,7 +21,7 @@ root.render(
         <Blog></Blog>
         <hr />
         <Footer></Footer> */}
-        <Musics></Musics>
+        <Musics/>
     </div>
 )
 
