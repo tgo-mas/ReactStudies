@@ -1,12 +1,5 @@
 import { createRoot } from "react-dom/client"
-import { Titulo } from "./components/Título/Título.jsx"
-// import { Blog } from "./components/Blog/Blog"
-// import { Footer } from "./components/Footer/Footer"
-// import { Mensagem } from "./components/Mensagem/Mensagem"
-// import { Postagem } from "./components/Postagem/Postagem"
-// import { Musics } from "./components/Musics/Musics"
-import {ListMusic} from "./components/ListMusic/ListMusic"
-import {Task} from "./components/Task/Task"
+import {App} from "./App"
 import "./style.css"
 
 const rootElement = document.getElementById('root');
@@ -14,30 +7,7 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
-    <div>
-        {/* <Titulo></Titulo>
-        <Mensagem></Mensagem>
-        <hr />
-        <Postagem></Postagem>
-        <hr />
-        <Blog></Blog>
-        <hr />
-        <Footer></Footer> */}
-        <Titulo borderLeftColor="#FF0000" backgroundColor="#FF000022" align="center">
-            Músicas
-        </Titulo>
-        <ListMusic/>
-        <Titulo borderLeftColor="#00FF00" backgroundColor="#00FF0022" align="center">
-            Tarefas
-        </Titulo>
-        <Task titulo="Beber água" status="Pendente" prazo="31/03/2023"/>
-        <Task titulo="Fazer atividade" status="Pendente" prazo="16/03/2023"/>
-        <Task titulo="Assistir aula" status="Concluída" prazo="18/03/2023"/>
-        <Titulo align="center">
-            &copy; Todos os direitos reservados.    
-        </Titulo>
-        
-    </div>
+    <App/>
 )
 
 // let desc = 'React!'
