@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client"
-// import { Titulo } from "./components/Título/Título.jsx"
+import { Titulo } from "./components/Título/Título.jsx"
 // import { Blog } from "./components/Blog/Blog"
 // import { Footer } from "./components/Footer/Footer"
 // import { Mensagem } from "./components/Mensagem/Mensagem"
@@ -23,10 +23,19 @@ root.render(
         <Blog></Blog>
         <hr />
         <Footer></Footer> */}
+        <Titulo borderLeftColor="#FF0000" backgroundColor="#FF000022" align="center">
+            Músicas
+        </Titulo>
         <ListMusic/>
+        <Titulo borderLeftColor="#00FF00" backgroundColor="#00FF0022" align="center">
+            Tarefas
+        </Titulo>
         <Task titulo="Beber água" status="Pendente" prazo="31/03/2023"/>
         <Task titulo="Fazer atividade" status="Pendente" prazo="16/03/2023"/>
         <Task titulo="Assistir aula" status="Concluída" prazo="18/03/2023"/>
+        <Titulo align="center">
+            &copy; Todos os direitos reservados.    
+        </Titulo>
         
     </div>
 )
