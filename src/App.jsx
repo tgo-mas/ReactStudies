@@ -1,8 +1,10 @@
-import {TabelaFunc} from "./components/TabelaFunc/TabelaFunc"
-import {ListaCompras} from "./components/ListaCompras/ListaCompras"
+
+import {ListaAlunos} from "./components/ListaAlunos/ListaAlunos"
 
 export function App(){
     return(
-        <ListaCompras/>
+        <>
+            <ListaAlunos/>
+        </>
     )
 }
