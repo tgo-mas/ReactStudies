@@ -23,9 +23,9 @@ const alunos = [{
 }];
 
 export function ListaAlunos() {
-    const alunoComponents = alunos.map((aluno) => { 
+    const alunoComponents = alunos.map((aluno, index) => { 
         return (
-            <div className={aluno.nota >= 7 ? 'aprovado' : 'reprovado'} >
+            <div className={aluno.nota >= 7 ? 'aprovado' : 'reprovado'} key={index} >
                 <h3>{aluno.nome}</h3>
                 <p>Data nasc.: {aluno.dataNasc}</p>
                 <p>Telefone: {aluno.telefone}</p>

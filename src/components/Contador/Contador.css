@@ -1,0 +1,26 @@
+.contador{
+    text-align: center;
+    width: 200px;
+    background-color: #aaa;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #666,
+                7px 7px 5px #0004;
+}
+
+.contador div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contador div button{
+    width: 50px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 2px 2px 0px #444;
+    transition: 0.3s ease;
+}
+
+.contador div button:active{
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 0;
+}
