@@ -1,0 +1,13 @@
+div{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+div p{
+    white-space: break-spaces;
+}
