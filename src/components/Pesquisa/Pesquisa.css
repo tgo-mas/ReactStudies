@@ -1,0 +1,13 @@
+
+.fruta{
+    text-align: center;
+    width: 250px;
+}
+
+.lista-frutas{
+    display: flex;
+}
+
+img{
+    width: 100%;
+}
