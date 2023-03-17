@@ -1,0 +1,44 @@
+.container{
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.number{
+    font-size: 40px;
+    width: 200px;
+}
+
+.par{
+    background-color: #f005;
+}
+
+.impar{
+    background-color: #0f05;
+}
+
+.minmax{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.minmax label{
+    border: 2px solid #0002;
+    border-bottom: 0px;
+    border-radius: 8px 8px 0 0;
+}
+.minmax input{
+    border: 2px solid #0002;
+    border-top: 0px;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 10px;
+}
+
+button{
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #0002
+}
