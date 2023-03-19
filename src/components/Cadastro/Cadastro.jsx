@@ -1,42 +1,76 @@
-import {useState} from "react"
+import { useState } from "react"
+import InputMask from "react-input-mask";
 import "./Cadastro.css"
 
-export function Cadastro(){
-    const [nome, setNome] = useState('');
-    const [email, setEmail] = useState('');
-    const [resumo, setResumo] = useState('');
+export function Cadastro() {
 
-    function obterNome(evt){
-        const campo = evt.target;
-        const valor = campo.value;
-        setNome(valor);
+    const [users, setUsers] = useState([]);
+    const [dadosUsers, setDados] = useState([]);
+
+    function addUser() {
+        let nome = document.getElementById("nome").value;
+        let email = document.getElementById("email").value;
+        let cpf = document.getElementById("cpf").value;
+        let salario = document.getElementById("salario").value;
+
+        let newUser = {
+            nome,
+            email,
+            cpf,
+            salario
+        }
+
+        let usersCopy = users;
+        usersCopy.push(newUser);
+        setUsers(usersCopy);
+
+        setDados(users.map((user, i) => {
+            return (
+                <tr key={i}>
+                    <td>{user.nome}</td>
+                    <td>{user.email}</td>
+                    <td>{user.cpf}</td>
+                    <td>{user.salario}</td>
+                </tr>
+            );
+        }));
     }
 
-    function obterEmail(evt){
-        const campo = evt.target;
-        const valor = campo.value;
-        setEmail(valor);
-    }
-
-    function obterResumo(evt){
-        setResumo(evt.target.value);
-    }
-
-    return(
-        <div>
-            <strong>Formulário de Cadastro</strong>
-            <br />
-            <input type="text" placeholder="Digite seu nome" onChange={obterNome} />
-            <br />
-            <input type="text" placeholder="Digite seu email" onChange={obterEmail}/>
-            <br />
-            <textarea placeholder="Digite seu resumo" onChange={obterResumo} />
-            <br />
-            <p><strong>{nome}</strong>
-            <br />
-            <strong>{email}</strong>
-            <br />
-            <strong>{resumo}</strong></p>
+    return (
+        <div className="container">
+            <form>
+                <strong>Formulário de Cadastro</strong>
+                <br />
+                <label htmlFor="nome">Nome</label>
+                <input type="text" placeholder="Digite seu nome" id="nome" />
+                <br />
+                <label htmlFor="email">E-mail</label>
+                <input type="text" placeholder="Digite seu email" id="email" />
+                <br />
+                <label htmlFor="cpf">CPF</label>
+                <InputMask mask="999.999.999-99" id="cpf" placeholder="Digite seu CPF" />
+                <br />
+                <label htmlFor="salario">Salário</label>
+                <input type="number" id="salario" placeholder="Digite seu salário" />
+                <br />
+                <button type="button" onClick={addUser} >Cadastrar</button>
+            </form>
+            <div className="table-div">
+                <strong>Usuários Cadastrados</strong>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>CPF</th>
+                            <th>Salário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {dadosUsers}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 

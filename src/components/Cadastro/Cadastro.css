@@ -1,8 +1,12 @@
-div{
+.container{
+    display: flex;
+}
+
+.container form{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 50%;
     justify-content: center;
     align-items: center;
     text-align: justify;
@@ -10,4 +14,12 @@ div{
 
 div p{
     white-space: break-spaces;
+}
+
+.table-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
