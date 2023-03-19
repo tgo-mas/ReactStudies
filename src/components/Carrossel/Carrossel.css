@@ -1,0 +1,21 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.carrossel{
+    width: 700px;
+    padding: 0;
+}
+
+.img-container, .img-container img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}

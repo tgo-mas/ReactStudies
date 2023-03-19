@@ -7,12 +7,13 @@
 // import { Pesquisa } from "./components/Pesquisa/Pesquisa.jsx"
 // import { Sorteio } from "./components/Sorteio/Sorteio"
 // import { QuestaoQuiz } from "./components/QuestaoQuiz/QuestaoQuiz"
-import { CalcIMC } from "./components/CalcIMC/CalcIMC"
+// import { CalcIMC } from "./components/CalcIMC/CalcIMC"
+import { Carrossel } from "./components/Carrossel/Carrossel"
 
 export function App() {
     return (
         <>
-            <CalcIMC/>
+            <Carrossel/>
         </>
     )
 }
