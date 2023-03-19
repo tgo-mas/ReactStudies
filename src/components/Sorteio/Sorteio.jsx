@@ -22,7 +22,7 @@ export function Sorteio(){
     return(
         <div className="container">
             <h1>Sorteio</h1>
-            <div className={"number " + (number % 2 == 0 ? "par" : "impar")}>
+            <div className={"number " + (number % 2 === 0 ? "par" : "impar")}>
                 {number}
             </div>
             <div className="minmax">

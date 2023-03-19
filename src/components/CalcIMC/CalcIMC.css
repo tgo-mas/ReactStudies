@@ -1,0 +1,25 @@
+.calc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #55661188;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #0005;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+}
+
+form button{
+    background-color: #667722;
+    border: 1px solid #556611;
+    border-radius: 5px;
+    margin: 10px
+}

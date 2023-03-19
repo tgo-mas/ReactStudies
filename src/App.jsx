@@ -6,12 +6,13 @@
 // import { Cadastro } from "./components/Cadastro/Cadastro"
 // import { Pesquisa } from "./components/Pesquisa/Pesquisa.jsx"
 // import { Sorteio } from "./components/Sorteio/Sorteio"
-import { QuestaoQuiz } from "./components/QuestaoQuiz/QuestaoQuiz"
+// import { QuestaoQuiz } from "./components/QuestaoQuiz/QuestaoQuiz"
+import { CalcIMC } from "./components/CalcIMC/CalcIMC"
 
 export function App() {
     return (
         <>
-            <QuestaoQuiz/>
+            <CalcIMC/>
         </>
     )
 }

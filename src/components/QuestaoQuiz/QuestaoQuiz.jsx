@@ -19,7 +19,7 @@ export function QuestaoQuiz() {
     function responder(evt) {
         let resp = evt.target.innerHTML;
         if (questao.correta === resp) {
-            setStatus("acerto")
+            setStatus("acerto");
         } else {
             setStatus("erro");
         }
