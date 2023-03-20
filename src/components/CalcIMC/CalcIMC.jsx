@@ -43,8 +43,8 @@ export function CalcIMC() {
                     } />
                 </div>
             </form>
-            <h3>Resultado: {imc}</h3>
-            <h3>{statusImc}</h3>
+            { (!isNaN(imc) && imc !== Infinity) && <><h3>Resultado: {imc}</h3>
+                <h3>{statusImc}</h3></>}
         </div>
     )
 }
