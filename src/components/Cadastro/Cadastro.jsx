@@ -7,6 +7,31 @@ export function Cadastro() {
     const [users, setUsers] = useState([]);
     const [dadosUsers, setDados] = useState([]);
 
+    function removerUsuario(user){
+        let usersCopy = users;
+        usersCopy.pop(user);
+        setUsers(usersCopy);
+        setDados(getDados(users));
+    }
+
+    function getDados(users){
+        let dados = users.map((user, i) => {
+            return (
+                <tr key={i}>
+                    <td>{user.nome}</td>
+                    <td>{user.email}</td>
+                    <td>{user.cpf}</td>
+                    <td>{user.salario}</td>
+                    <td>
+                        <button type="button" onClick={() => removerUsuario(user)}>
+                            Excluir
+                        </button>
+                    </td>
+                </tr>
+            )});
+        return dados;
+    }
+
     function addUser() {
         let nome = document.getElementById("nome").value;
         let email = document.getElementById("email").value;
@@ -24,16 +49,7 @@ export function Cadastro() {
         usersCopy.push(newUser);
         setUsers(usersCopy);
 
-        setDados(users.map((user, i) => {
-            return (
-                <tr key={i}>
-                    <td>{user.nome}</td>
-                    <td>{user.email}</td>
-                    <td>{user.cpf}</td>
-                    <td>{user.salario}</td>
-                </tr>
-            );
-        }));
+        setDados(getDados(users));
     }
 
     return (
@@ -64,6 +80,7 @@ export function Cadastro() {
                             <th>E-mail</th>
                             <th>CPF</th>
                             <th>Salário</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
