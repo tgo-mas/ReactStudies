@@ -9,12 +9,13 @@
 // import { QuestaoQuiz } from "./components/QuestaoQuiz/QuestaoQuiz"
 // import { CalcIMC } from "./components/CalcIMC/CalcIMC"
 // import { Carrossel } from "./components/Carrossel/Carrossel"
-import { ConversorTemp } from "./components/ConversorTemp/ConversorTemp"
+// import { ConversorTemp } from "./components/ConversorTemp/ConversorTemp"
+import { Dicionario } from "./components/Dicionario/Dicionario"
 
 export function App() {
     return (
         <>
-            <ConversorTemp/>
+            <Dicionario/>
         </>
     )
 }
